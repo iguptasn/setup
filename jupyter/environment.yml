@@ -1,0 +1,33 @@
+name: jupyter
+
+channels:
+  - conda-forge
+  - pyviz
+  - plotly
+
+dependencies:
+  # IDE and extension manager
+  - jupyterlab
+  - nodejs 
+  
+  # Extensions: plotting
+  - jupyter_bokeh #bokeh
+  - pyviz_comms #pyviz and holoviz tools
+  - ipympl #matplotlib
+  - jupyter-dash #plotly/dash
+  
+  # Extensions: parallel computing
+  - dask-labextension #dask
+
+  # Extensions: Quality of life
+  - jupyterlab-git #version control
+  - jupyterlab-variableinspector #variable inspector
+  - jupyterlab-system-monitor #system monitor, topbar
+  - pip:
+    - jupyterlab-code-formatter #code formatting, needs linters
+    - jupyterlab-logout #logout button, topbar
+  
+  # Linters
+  - black 
+  - isort
+  
