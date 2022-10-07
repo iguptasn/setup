@@ -6,7 +6,6 @@ unsetopt autocd
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/igupta/.zshrc'
 autoload -Uz compinit
@@ -16,7 +15,7 @@ compinit
 # Setting up terminal prompt here
 PROMPT='%~ $:'
 
-# some exa aliases
+# some exa aliases (requires exa)
 alias ls='exa -1lah'
 
 # some rm aliases
